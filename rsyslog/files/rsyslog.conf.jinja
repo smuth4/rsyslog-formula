@@ -40,7 +40,7 @@ $ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat
 # Set the default permissions for all log files.
 #
 $FileOwner root
-$FileGroup adm
+$FileGroup root
 $FileCreateMode {{ config.get('filemode', '0640') }}
 $DirCreateMode {{ config.get('dirmode', '0755') }}
 $Umask 0022
